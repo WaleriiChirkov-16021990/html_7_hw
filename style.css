@@ -532,6 +532,7 @@ body {
   width: 31.451px;
   height: 32px;
   margin-right: 7px;
+  border-radius: 4px;
   flex-shrink: 0;
   background-color: #fff;
   display: flex;
@@ -860,6 +861,57 @@ span:hover {
 
 /* анимация опции 3 завершена */
 
+/* анимация текст футер */
+.footer_text:hover .footer_text_left {
+  color: #9f9f9f;
+}
+/* конец анимации текст футер */
+
+/* анимация логотипов социальных сетей */
+.footer_logo_1:hover {
+  background-color: #3b5998;
+}
+
+.footer_logo_2:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50% #405de6 50%,
+    #cc2366 75% #405de6 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.footer_logo_3:hover {
+  background-color: #cc2366;
+}
+
+.footer_logo_4:hover {
+  background-color: #2481cc;
+}
+
+/* конец анимации логотипов социальных сетей */
+
 @media (min-width: 1241px) {
   .text_box_title {
     color: #222;
@@ -1079,6 +1131,14 @@ span:hover {
     height: 100%;
   }
 
+  .img_grid_center {
+    width: 320px;
+    height: 373px;
+  }
+  .img_grid_center_2 {
+    width: 141px;
+  }
+
   .items_option {
     width: 320px;
     height: 133px;
@@ -1186,9 +1246,11 @@ span:hover {
   }
 
   .img {
-    max-width: 280px;
+    /* max-width: 280px; */
+    max-width: 320px;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
