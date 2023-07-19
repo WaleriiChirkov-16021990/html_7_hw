@@ -150,6 +150,9 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(33, 22, 22, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .center_top_offer_2 {
@@ -177,6 +180,9 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(33, 22, 22, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p_of_img {
@@ -265,7 +271,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-filter: brightness(100%);
 }
 
 .h5_grid_title {
@@ -541,9 +546,14 @@ body {
 }
 
 /* Делаю затенение картинки при наведении указателя мыши */
+
+/* relative */
 .img {
-  display: block;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 /* .mask_icon {
@@ -596,7 +606,7 @@ body {
   transition: opacity 0.4s linear;
 }
 
-span:hover {
+.mask:hover {
   opacity: 1;
 }
 /* Затенение завершено */
